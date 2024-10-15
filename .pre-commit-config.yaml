@@ -5,8 +5,10 @@ repos:
           - id: ruff
             name: ruff linter
             args: [--fix, --show-fixes]
+            exclude: 0-Intro-Python.ipynb
           - id: ruff-format
             name: ruff formatter
+            exclude: 0-Intro-Python.ipynb
 
     - repo: https://github.com/codespell-project/codespell
       rev: v2.3.0
